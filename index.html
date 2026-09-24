@@ -1,0 +1,720 @@
+
+<html>
+
+<head>
+
+<title>Abitha Sree | Portfolio</title>
+
+<style>
+
+/* =====================================
+   UNIVERSAL SELECTOR
+   ===================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =====================================
+   ELEMENT SELECTOR
+   ===================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef1f7;
+    color: #30364d;
+    line-height: 1.6;
+}
+
+
+/* =====================================
+   HEADER
+   ===================================== */
+
+header {
+    background: #202a44;
+    color: white;
+
+    /* BOX MODEL */
+    padding: 45px;
+    margin-bottom: 30px;
+
+    text-align: center;
+    border-bottom: 8px solid #f4a261;
+}
+
+header h1 {
+    margin-bottom: 18px;
+    letter-spacing: 2px;
+}
+
+header img {
+    width: 180px;
+    height: 180px;
+
+    object-fit: cover;
+
+    border: 6px solid #f4a261;
+    border-radius: 20px;
+
+    padding: 5px;
+
+    background: white;
+
+    box-shadow: 8px 8px 0px #111827;
+
+    transition: 0.3s;
+}
+
+header img:hover {
+    transform: rotate(-3deg) scale(1.05);
+}
+
+
+/* =====================================
+   NAVIGATION
+   CLASS SELECTOR
+   ===================================== */
+
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    display: inline-block;
+
+    color: white;
+    text-decoration: none;
+
+    padding: 9px 15px;
+    margin: 5px;
+
+    border: 1px solid #68738d;
+    border-radius: 5px;
+
+    transition: 0.3s;
+}
+
+
+/* PSEUDO-CLASS SELECTOR */
+
+nav a:hover {
+    background: #f4a261;
+    color: #202a44;
+
+    border-color: #f4a261;
+
+    transform: translateY(-4px);
+}
+
+
+/* =====================================
+   COMMON SECTION
+   ID SELECTOR
+   ===================================== */
+
+section {
+    width: 88%;
+    max-width: 1000px;
+
+    margin: 35px auto;
+    padding: 30px;
+
+    background: white;
+
+    border: 1px solid #d7dbe5;
+    border-left: 7px solid #202a44;
+
+    border-radius: 12px;
+
+    box-shadow: 6px 6px 0px #d7dbe5;
+}
+
+
+/* =====================================
+   SECTION HEADINGS
+   ===================================== */
+
+section h2 {
+    color: #202a44;
+
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+
+    border-bottom: 2px dashed #f4a261;
+
+    letter-spacing: 1px;
+}
+
+
+/* =====================================
+   ABOUT SECTION
+   ===================================== */
+
+#about {
+    background: #fffaf5;
+}
+
+#about p {
+    margin-bottom: 12px;
+    padding: 8px 12px;
+
+    border-left: 3px solid #f4a261;
+}
+
+
+/* =====================================
+   EDUCATION
+   ===================================== */
+
+#education h3 {
+    color: #202a44;
+
+    margin-top: 22px;
+    margin-bottom: 5px;
+
+    padding: 12px 15px;
+
+    background: #eef1f7;
+
+    border-left: 5px solid #f4a261;
+
+    border-radius: 5px;
+}
+
+#education p {
+    margin-left: 20px;
+    margin-bottom: 5px;
+}
+
+
+/* =====================================
+   SKILLS
+   ===================================== */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+.skills-container span {
+    padding: 12px 20px;
+
+    background: #202a44;
+    color: white;
+
+    border: 3px solid #f4a261;
+
+    border-radius: 8px;
+
+    font-weight: bold;
+
+    box-shadow: 4px 4px 0px #d7dbe5;
+
+    transition: 0.3s;
+}
+
+.skills-container span:hover {
+    background: #f4a261;
+    color: #202a44;
+
+    transform: translate(-2px, -4px);
+
+    box-shadow: 6px 6px 0px #202a44;
+}
+
+
+/* =====================================
+   PROJECT
+   ===================================== */
+
+#project {
+    background: #202a44;
+    color: white;
+
+    border-left: none;
+    border-top: 7px solid #f4a261;
+}
+
+#project h2 {
+    color: white;
+}
+
+#project h3 {
+    color: #f4a261;
+
+    margin-bottom: 15px;
+    font-size: 23px;
+}
+
+#project p {
+    margin-bottom: 12px;
+}
+
+#project strong {
+    color: #f4a261;
+}
+
+
+/* =====================================
+   EXPERIENCE
+   ===================================== */
+
+#experience h3 {
+    color: #202a44;
+
+    margin-bottom: 8px;
+}
+
+#experience ul {
+    margin-top: 15px;
+    margin-left: 25px;
+}
+
+#experience li {
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
+   LIST STYLE
+   ===================================== */
+
+ul {
+    padding-left: 25px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+li::marker {
+    color: #f4a261;
+}
+
+
+/* =====================================
+   CERTIFICATIONS
+   ===================================== */
+
+#certifications li {
+    list-style: none;
+
+    padding: 12px 15px;
+    margin-bottom: 10px;
+
+    background: #f4f6fa;
+
+    border-left: 4px solid #202a44;
+
+    border-radius: 4px;
+
+    transition: 0.3s;
+}
+
+#certifications li:hover {
+    margin-left: 8px;
+    border-left-color: #f4a261;
+}
+
+
+/* =====================================
+   ACTIVITIES
+   ===================================== */
+
+#activities li {
+    padding: 10px;
+
+    margin-bottom: 10px;
+
+    border-bottom: 1px solid #ddd;
+}
+
+
+/* =====================================
+   ATTRIBUTE SELECTOR
+   Selects email links
+   ===================================== */
+
+a[href^="mailto"] {
+    display: inline-block;
+
+    background: #f4a261;
+    color: #202a44;
+
+    text-decoration: none;
+
+    padding: 12px 25px;
+    margin-top: 15px;
+
+    border: 2px solid #202a44;
+    border-radius: 6px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+/* ATTRIBUTE + HOVER */
+
+a[href^="mailto"]:hover {
+    background: #202a44;
+    color: white;
+
+    border-color: #f4a261;
+}
+
+
+/* =====================================
+   CONTACT
+   ===================================== */
+
+#contact {
+    text-align: center;
+
+    background: #fffaf5;
+
+    border: 2px solid #202a44;
+}
+
+#contact p {
+    margin-bottom: 8px;
+}
+
+
+/* =====================================
+   FOOTER
+   ===================================== */
+
+footer {
+    margin-top: 45px;
+    padding: 25px;
+
+    text-align: center;
+
+    background: #202a44;
+    color: white;
+
+    border-top: 6px solid #f4a261;
+}
+
+
+/* =====================================
+   RESPONSIVE CSS
+   ===================================== */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 30px 15px;
+    }
+
+    header img {
+        width: 150px;
+        height: 150px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px auto;
+        width: 200px;
+    }
+
+    section {
+        width: 92%;
+        padding: 22px;
+    }
+
+    .skills-container {
+        gap: 10px;
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ==============================
+     HEADER
+     ============================== -->
+
+<header>
+
+    <h1>MY PORTFOLIO</h1>
+
+    <img src="abii.jpeg">
+
+    <h1>Abitha Sree S</h1>
+
+    <nav>
+
+        <a href="#about">About</a>
+
+        <a href="#education">Education</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#project">Project</a>
+
+        <a href="#experience">Experience</a>
+
+        <a href="#certifications">Certifications</a>
+
+        <a href="#activities">Activities</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ==============================
+     ABOUT
+     ============================== -->
+
+<section id="about">
+
+    <h2>About Me</h2>
+
+    <p>
+        Hello! I am Abitha Sree, currently pursuing MCA at
+        Sree Saraswathi Thiyagaraja College of Arts and Science.
+    </p>
+
+    <p>
+        I am interested in web development and programming.
+        I enjoy learning new technologies and building simple projects.
+    </p>
+
+</section>
+
+
+<!-- ==============================
+     EDUCATION
+     ============================== -->
+
+<section id="education">
+
+    <h2>Education</h2>
+
+    <h3>MCA - Master of Computer Applications</h3>
+
+    <p>
+        Sree Saraswathi Thiyagaraja College of Arts and Science
+    </p>
+
+    <p>2026 - Present</p>
+
+
+    <h3>B.Sc. Information Technology</h3>
+
+    <p>
+        Nallamuthu Gounder Mahalingam College
+    </p>
+
+    <p>
+        Bharathiar University, Coimbatore
+    </p>
+
+    <p>2023 - 2026</p>
+
+
+    <h3>Higher Secondary Certificate (HSC)</h3>
+
+    <p>
+        Keshav Vidhya Mandir Matriculation Higher Secondary School
+    </p>
+
+    <p>Pollachi</p>
+
+    <p>2022 - 2023</p>
+
+
+    <h3>Secondary School Leaving Certificate (SSLC)</h3>
+
+    <p>
+        Keshav Vidhya Mandir Matriculation Higher Secondary School
+    </p>
+
+    <p>Pollachi</p>
+
+    <p>2020 - 2021</p>
+
+</section>
+
+
+<!-- ==============================
+     SKILLS
+     ============================== -->
+
+<section id="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skills-container">
+
+        <span>HTML</span>
+
+        <span>CSS</span>
+
+        <span>JavaScript</span>
+
+        <span>Java</span>
+
+        <span>Python</span>
+
+        <span>PHP</span>
+
+        <span>MySQL</span>
+
+    </div>
+
+</section>
+
+
+<!-- ==============================
+     PROJECT
+     ============================== -->
+
+<section id="project">
+
+    <h2>My Project</h2>
+
+    <h3>Cosmetic & Parlour Management System</h3>
+
+    <p>
+        A web-based system for managing cosmetics,
+        parlour services and appointments.
+    </p>
+
+    <p>
+        <strong>Technologies:</strong>
+        HTML, CSS, JavaScript, PHP, MySQL
+    </p>
+
+</section>
+
+
+<!-- ==============================
+     EXPERIENCE
+     ============================== -->
+
+<section id="experience">
+
+    <h2>Experience</h2>
+
+    <h3>Full Stack Web Development Intern</h3>
+
+    <p>
+        <strong>Edu Tantr - Bangalore</strong>
+    </p>
+
+    <p>
+        June 2025 - September 2025
+    </p>
+
+    <ul>
+
+        <li>Worked with the MERN stack</li>
+
+        <li>Used Git and GitHub for version control</li>
+
+    </ul>
+
+</section>
+
+
+<!-- ==============================
+     CERTIFICATIONS
+     ============================== -->
+
+<section id="certifications">
+
+    <h2>Certifications</h2>
+
+    <ul>
+
+        <li>Java Programming - GeeksforGeeks</li>
+
+        <li>English Typewriting - Government Technical Exam</li>
+
+        <li>R Programming - Spoken Tutorial, IIT Bombay</li>
+
+        <li>Data Manipulation using Excel</li>
+
+    </ul>
+
+</section>
+
+
+<!-- ==============================
+     ACTIVITIES
+     ============================== -->
+
+<section id="activities">
+
+    <h2>Activities</h2>
+
+    <ul>
+
+        <li>Participated in AI Artistry Competition</li>
+
+        <li>Participated in Track the Pot Competition</li>
+
+        <li>Completed Adobe Photoshop Course</li>
+
+    </ul>
+
+</section>
+
+
+<!-- ==============================
+     CONTACT
+     ============================== -->
+
+<section id="contact">
+
+    <h2>Contact</h2>
+
+    <p>
+        <strong>Email:</strong>
+        abithasree03@gmail.com
+    </p>
+
+    <p>
+        <strong>Location:</strong>
+        Pollachi, Tamil Nadu
+    </p>
+
+    <a href="mailto:abithasree03@gmail.com">
+        Send me an Email
+    </a>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+    <p>© 2026 Abitha Sree S | Portfolio</p>
+
+</footer>
+
+
+</body>
+
+</html>
+
